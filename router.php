@@ -1,5 +1,8 @@
 <?php
 session_start();
+$message = "wrong answer";
+echo "<script type='text/javascript'>alert('$message');</script>";
+
 function get($route, $path_to_include){
   if( $_SERVER['REQUEST_METHOD'] == 'GET' ){ route($route, $path_to_include); }  
 }
